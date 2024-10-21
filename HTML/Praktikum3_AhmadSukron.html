@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contoh halaman website HTML dengan berbagai tag">
+    <title>Contoh Halaman HTML</title>
+</head>
+<body>
+
+    <!-- Heading 1 dengan tag <h1> -->
+    <h1 id="judul-utama" title="Ini adalah Judul Utama">Selamat Datang di Halaman Contoh</h1>
+
+    <!-- Paragraf di bawah Heading 1 -->
+    <p>Ini adalah contoh website yang menggunakan berbagai tag HTML dasar. Tujuan halaman ini adalah untuk memberikan contoh penggunaan tag-tag tersebut.</p>
+
+    <!-- Heading 2 dengan tag <h2> -->
+    <h2 title="Bagian pertama">Bagian 1: Penggunaan Tag HTML Dasar</h2>
+
+    <!-- Paragraf di bawah Heading 2 -->
+    <p>HTML (HyperText Markup Language) adalah bahasa yang digunakan untuk membuat struktur dasar sebuah halaman web. Berikut adalah beberapa tag HTML yang sering digunakan:</p>
+
+    <!-- List dengan tag <ul> dan <li> -->
+    <ul>
+        <li><strong>&lt;h1&gt;</strong> hingga <strong>&lt;h6&gt;</strong>: Tag heading</li>
+        <li><strong>&lt;p&gt;</strong>: Tag paragraf</li>
+        <li><strong>&lt;a&gt;</strong>: Tag hyperlink</li>
+        <li><strong>&lt;img&gt;</strong>: Tag gambar</li>
+        <li><strong>&lt;table&gt;</strong>: Tag tabel</li>
+        <li><strong>&lt;ul&gt;</strong> dan <strong>&lt;li&gt;</strong>: Tag list</li>
+        <li><strong>&lt;div&gt;</strong>: Tag pembungkus (container)</li>
+        <li><strong>&lt;form&gt;</strong>: Tag formulir</li>
+    </ul>
+
+    <!-- Heading 2 berikutnya -->
+    <h2 title="Bagian kedua">Bagian 2: Contoh Penggunaan Berbagai Tag</h2>
+
+    <!-- Paragraf -->
+    <p>Berikut adalah contoh penggunaan berbagai tag HTML yang umum dalam pembuatan halaman web.</p>
+
+    <!-- Tag gambar dengan atribut alt dan title -->
+    <img src="example.jpg" alt="Gambar contoh" title="Ini adalah contoh gambar" width="300" height="200">
+
+    <!-- Tag link -->
+    <p>Klik <a href="https://www.example.com" target="_blank" title="Buka contoh link">di sini</a> untuk mengunjungi contoh website.</p>
+
+    <!-- Table dengan tag <table>, <thead>, <tbody>, <tr>, <th>, <td> -->
+    <table border="1" cellspacing="0" cellpadding="10">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Profesi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ahmad</td>
+                <td>Programmer</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sukron</td>
+                <td>Desainer</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Formulir dengan tag <form>, <input>, <textarea>, <button> -->
+    <h2 title="Formulir">Formulir Pendaftaran</h2>
+    <form action="/submit" method="POST">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email" required><br><br>
+
+        <label for="pesan">Pesan:</label><br>
+        <textarea id="pesan" name="pesan" rows="4" cols="50" placeholder="Tulis pesan di sini"></textarea><br><br>
+
+        <button type="submit">Kirim</button>
+    </form>
+
+    <!-- Audio -->
+    <h2>Contoh Audio</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <!-- Video -->
+    <h2>Contoh Video</h2>
+    <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        Browser Anda tidak mendukung elemen video.
+    </video>
+
+    <!-- Tag <iframe> untuk embed video YouTube -->
+    <h2>Embed Video YouTube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ge042_egODs?si=GFLai-4NhBPDbeVb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Tag <details> dan <summary> -->
+    <h2>Details & Summary</h2>
+    <details>
+        <summary>Klik untuk melihat lebih lanjut</summary>
+        <p>Ini adalah detail tambahan yang dapat disembunyikan atau ditampilkan.</p>
+    </details>
+
+    <!-- Tag <abbr> untuk singkatan -->
+    <p>Contoh singkatan: <abbr title="HyperText Markup Language">HTML</abbr> adalah bahasa markup untuk membuat halaman web.</p>
+
+    <!-- Tag <blockquote> -->
+    <blockquote cite="https://www.w3schools.com/html/">
+        "Ini adalah kutipan dari sumber yang terpercaya."
+    </blockquote>
+
+    <!-- Tag <address> -->
+    <address>
+        Ditulis oleh: Ahmad Sukron<br>
+        Kunjungi saya di: <br>
+        Jalan Samping Masjid Pasar, RT.1/RW.7, Kota Jepara<br>
+        Email: <a href="mailto:ahmadsukron964@gmail.com">ahmadsukron964@gmail.com</a>
+    </address>
+
+</body>
+</html>

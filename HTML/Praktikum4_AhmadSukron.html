@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumpulan Informasi Data Mahasiswa</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.logop{
+    max-width: 80px;
+  height: auto;
+}
+
+/* Container utama untuk layout grid */
+.container {
+    display: grid;
+    grid-template-rows: 100px auto;
+    grid-template-columns: 200px auto;
+    height: 100vh;
+    gap: 10px;
+}
+
+/* Header berada di atas dan memanjang ke seluruh lebar halaman */
+header {
+    grid-column: span 2;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px; 
+}
+
+/* Sidebar untuk daftar nama mahasiswa */
+.sidebar {
+    padding: 15px;
+    overflow-y: auto; /* Jika banyak mahasiswa, bisa di-scroll */
+}
+
+/* Link di sidebar */
+.sidebar a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Iframe untuk menampilkan konten */
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Frame untuk Header -->
+        <header>
+            <img class="logop" src="logo_universitas.png" alt="Logo Universitas" style="vertical-align: middle;">
+            <span>Kumpulan Informasi Data Mahasiswa</span>
+        </header>
+
+        <!-- Frame kiri untuk daftar nama mahasiswa -->
+        <div class="sidebar">
+            <a href="link_Praktikum4_ahmad.html" target="contentFrame">Ahmad Sukron</a>
+            <a href="link_Praktikum4_hasan.html" target="contentFrame">Hasan Fahmil M</a>
+            <a href="link_Praktikum4_andre.html" target="contentFrame">Ahmad Andre</a>
+        </div>
+
+        <!-- Frame kanan untuk detail informasi mahasiswa -->
+        <div class="content">
+            <iframe name="contentFrame" width="100%" height="100%" style="border:none;"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
