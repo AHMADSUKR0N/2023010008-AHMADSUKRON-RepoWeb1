@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Layout Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Font umum untuk seluruh halaman */
+            margin: 0; /* Menghapus margin default */
+            padding: 0; /* Menghapus padding default */
+        }
+
+        .container {
+            width: 100%; /* Lebar 100% dari layar */
+            max-width: 1200px; /* Maksimal lebar 1200px */
+            margin: 0 auto; /* Membuat layout center */
+            overflow: hidden; /* Mencegah konten meluap */
+        }
+
+        /* Bagian Header */
+        header {
+            background-color: #3cb9c5; /* Warna background biru muda */
+            color: white; /* Warna teks putih */
+            text-align: center; /* Teks rata tengah */
+            padding: 20px; /* Spasi di dalam header */
+            border-bottom-right-radius: 20px; /* Membulatkan sudut kanan bawah */
+            position: relative;
+        }
+
+        /* Bagian Sidebar */
+        aside {
+            float: left; /* Posisi di sebelah kiri */
+            width: 25%; /* Lebar sidebar 25% */
+            padding: 15px; /* Spasi dalam sidebar */
+            background-color: #f4f4f4; /* Warna background abu-abu terang */
+            text-align: center; /* Teks rata tengah */
+
+        }
+
+        aside img {
+            width: 50%; /* Gambar di sidebar menggunakan 80% lebar */
+            margin-bottom: 15px; /* Jarak bawah gambar */
+        }
+
+        .artikel h2 {
+            background-color: #000080; /* Background biru gelap */
+            color: white; /* Teks warna putih */
+            padding: 10px; /* Spasi di dalam header artikel */
+            margin-bottom: 10px; /* Jarak bawah header artikel */
+        }
+
+        .artikel ul {
+            list-style: none; /* Menghapus bullet pada daftar */
+            padding: 0; /* Menghapus padding default */
+        }
+
+        .artikel ul li {
+            text-align: left; /* Teks rata kiri */
+            padding: 5px; /* Spasi di setiap item daftar */
+        }
+
+        .artikel ul li a {
+            text-decoration: none; /* Menghapus garis bawah tautan */
+            color: #0000ff; /* Warna teks biru */
+            font-weight: bold; /* Membuat teks bold */
+        }
+
+        .artikel ul li a:hover {
+            color: #ff0000; /* Warna teks merah saat dihover */
+        }
+
+        /* Bagian Navigasi */
+        nav {
+            overflow: hidden; /* Mencegah konten navigasi meluap */
+            background-color: #000080; /* Warna background biru gelap */
+            color: white; /* Warna teks putih */
+        }
+
+        nav ul {
+            list-style: none; /* Menghapus bullet pada daftar */
+            padding: 0; /* Menghapus padding default */
+            margin: 0; /* Menghapus margin default */
+            text-align: center; /* Daftar rata tengah */
+        }
+
+        nav ul li {
+            display: inline; /* Item daftar ditampilkan secara horizontal */
+            margin-right: 20px; /* Memberi jarak antar item */
+        }
+
+        nav ul li a {
+            text-decoration: none; /* Menghapus garis bawah tautan */
+            color: white; /* Warna teks putih */
+            font-weight: bold; /* Membuat teks bold */
+        }
+
+        nav ul li a:hover {
+            color: #3cb9c5; /* Warna biru muda saat dihover */
+        }
+
+        /* Bagian Konten Utama */
+        main {
+            float: left; /* Posisi di sebelah kiri */
+            width: 70%; /* Lebar konten utama 70% */
+            padding: 15px; /* Spasi dalam konten */
+        }
+
+        .gallery img {
+            width: 23%; /* Gambar dalam galeri menggunakan 23% lebar */
+            margin: 0%; /* Jarak antar gambar */
+        }
+
+        /* Bagian Footer */
+        footer {
+            clear: both; /* Menghapus float sebelumnya */
+            background-color: #000080; /* Background biru gelap */
+            color: white; /* Warna teks putih */
+            text-align: center; /* Teks rata tengah */
+            padding: 15px; /* Spasi dalam footer */
+            margin-top: 20px; /* Jarak atas footer */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Bagian Header -->
+        <header>
+            <h1>Belajar Layout Website</h1>
+            <p>Menggunakan HTML dan CSS</p>
+        </header>
+        
+        <!-- Bagian Sidebar -->
+        <aside>
+            <img src="/HTML/image/logo_universitas.png" alt="Logo Politeknik Balekambang"> <!-- Logo sidebar -->
+            <div class="artikel">
+                <h2>Artikel Populer</h2>
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/default.asp">HTML</a></li> <!-- Tautan ke halaman HTML -->
+                    <li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li> <!-- Tautan ke halaman CSS -->
+                    <li><a href="https://www.polibang.ac.id/">Polibang</a></li> <!-- Tautan ke halaman Polibang -->
+                </ul>
+            </div>
+        </aside>
+        
+        <!-- Bagian Navigasi -->
+        <nav>
+            <ul>
+                <li><a href="https://www.polibang.ac.id/">Home</a></li> <!-- Tautan ke halaman Home -->
+                <li><a href="https://www.polibang.ac.id/">Visi & Misi</a></li> <!-- Tautan ke halaman Visi & Misi -->
+                <li><a href="https://www.polibang.ac.id/">Informasi</a></li> <!-- Tautan ke halaman Informasi -->
+                <li><a href="https://www.polibang.ac.id/">Dosen</a></li> <!-- Tautan ke halaman Dosen -->
+                <li><a href="https://www.polibang.ac.id/">Kontak</a></li> <!-- Tautan ke halaman Kontak -->
+                <li><a href="https://www.polibang.ac.id/">Gallery</a></li> <!-- Tautan ke halaman  Gallery -->
+            </ul>
+        </nav>
+
+        <!-- Bagian Konten Utama -->
+        <main>
+            <h2>Selamat Datang</h2>
+            <p>Belajar Membuat Layout Desain Web menggunakan HTML dan CSS dengan mudah.</p>
+            <p>Untuk belajar HTML klik halaman <a href="https://www.w3schools.com/html/default.asp">HTML</a> dan belajar CSS ke halaman <a href="https://www.w3schools.com/css/default.asp">CSS</a>.</p>
+            <h2>Galeri</h2>
+            <div class="gallery">
+                <img src="/HTML/image/dana.png" alt="Teman"> <!-- Gambar pertama di galeri -->
+                <img src="/HTML/image/syukron.png" alt="Teman"> <!-- Gambar kedua di galeri -->
+                <img src="/HTML/image/hasan.png" alt="Teman"> <!-- Gambar ketiga di galeri -->
+                <img src="/HTML/image/andre.png" alt="Teman"> <!-- Gambar keempat di galeri -->
+            </div>
+        </main>
+
+        <!-- Bagian Footer -->
+        <footer>
+            <p>&copy; Copyright 2024. Ahmad Sukron <br>
+            Rekayasa Perangkat Lunak Politeknik Balekambang Jepara</p>
+        </footer>
+    </div>
+</body>
+</html>

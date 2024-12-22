@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8"> <!-- Menentukan encoding karakter untuk halaman -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mengatur tampilan agar responsif di perangkat -->
+    <title>Cek Syarat Pengajuan Pinjaman</title> <!-- Judul halaman -->
+</head>
+<body>
+    <h2>Cek Syarat Pengajuan Pinjaman</h2> <!-- Judul utama halaman -->
+
+    <!-- Form input untuk umur -->
+    <label for="umur">Masukkan Umur Anda:</label> <!-- Label untuk input umur -->
+    <input type="number" id="umur" required> <!-- Input umur (hanya menerima angka dan wajib diisi) -->
+    <br><br> <!-- Baris baru untuk memberi jarak -->
+
+    <!-- Form input untuk pendapatan -->
+    <label for="pendapatan">Masukkan Pendapatan Bulanan Anda (dalam Rp):</label> <!-- Label untuk input pendapatan -->
+    <input type="number" id="pendapatan" required> <!-- Input pendapatan (hanya menerima angka dan wajib diisi) -->
+    <br><br> <!-- Baris baru untuk memberi jarak -->
+
+    <!-- Tombol untuk mengecek syarat -->
+    <button onclick="cekSyarat()">Cek Syarat</button> <!-- Tombol yang memanggil fungsi cekSyarat() ketika diklik -->
+
+    <!-- Tempat untuk menampilkan hasil pengecekan -->
+    <p id="hasil"></p> <!-- Elemen paragraf untuk menampilkan pesan hasil -->
+
+    <script>
+        // Fungsi untuk mengecek syarat pengajuan pinjaman
+        function cekSyarat() {
+            // Mendapatkan nilai input umur dan pendapatan
+            const umur = document.getElementById("umur").value; // Mengambil nilai input umur
+            const pendapatan = document.getElementById("pendapatan").value; // Mengambil nilai input pendapatan
+
+            // Mengecek apakah pengguna memenuhi syarat
+            if (umur >= 21 && pendapatan >= 3000000) { // Syarat: umur >= 21 tahun dan pendapatan >= 3 juta
+                document.getElementById("hasil").innerText = "Anda memenuhi syarat untuk pengajuan pinjaman."; 
+                // Menampilkan pesan jika memenuhi syarat
+            } else {
+                document.getElementById("hasil").innerText = "Anda belum memenuhi syarat untuk pengajuan pinjaman.";
+                // Menampilkan pesan jika tidak memenuhi syarat
+            }
+        }
+    </script>
+</body>
+</html>

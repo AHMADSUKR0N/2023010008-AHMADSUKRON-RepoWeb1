@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ASSET/CSS/style.css">
+    <link rel="stylesheet" href="ASSET/CSS/pop-up.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <img src="ASSET/IMAGE/logo_universitas.png" alt="Logo Polibang">
+        <h1>Selamat Datang di Website Saya</h1>
+        <p>Mahasiswa Rekayasa Perangkat Lunak - Politeknik Balekambang Jepara</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="konten.html">Konten</a>
+        <a href="picture.html">Picture</a>
+        <a href="bebas.html">Menu Bebas</a>
+    </nav>
+    <div class="container">
+        <h2>Tentang Saya</h2>
+        <p>
+            Halo! Saya <strong>Ahmad Sukron</strong>, mahasiswa di Politeknik Balekambang Jepara jurusan Rekayasa Perangkat Lunak. 
+            Saya memiliki minat yang mendalam di bidang <em>Elektronika Industri</em> dan <em>Jaringan</em>. 
+            Fokus saya adalah mengembangkan sistem yang mendukung otomasi industri dan teknologi jaringan.
+        </p>
+        <h3>Keahlian Utama</h3>
+        <ul>
+            <li>Desain dan pengembangan rangkaian elektronik untuk otomasi industri.</li>
+            <li>Pemeliharaan dan instalasi jaringan lokal (LAN) dan nirkabel (Wi-Fi).</li>
+            <li>Integrasi perangkat keras dan perangkat lunak untuk sistem kontrol.</li>
+        </ul>
+        <h3>Proyek yang Pernah Dikerjakan</h3>
+        <ol>
+            <li>
+                <strong>Proyek IoT untuk Monitoring Mesin:</strong> 
+                Mengembangkan sistem berbasis IoT untuk memantau performa mesin produksi secara real-time.
+            </li>
+            <li>
+                <strong>Optimasi Jaringan Industri:</strong> 
+                Meningkatkan stabilitas jaringan pada pabrik menggunakan perangkat routing dan switching.
+            </li>
+            <li>
+                <strong>Simulasi Kendali Robotik:</strong> 
+                Merancang prototipe robot kendali jarak jauh menggunakan mikrokontroler.
+            </li>
+        </ol>
+        <button onclick="openModal('loginModal')">Login</button>
+        <button onclick="openModal('registerModal')">Registrasi</button>
+    </div>
+
+    <!-- Modal Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h3>Login</h3>
+            <form action="profile.html" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div class="modal-footer">
+                <p>Belum punya akun? <a onclick="switchToRegister()">Daftar di sini</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Registrasi -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('registerModal')">&times;</span>
+            <h3>Registrasi</h3>
+            <form action="profile.html" method="post">
+                <input type="text" name="fullname" placeholder="Nama Lengkap" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Registrasi</button>
+            </form>
+            <div class="modal-footer">
+                <p>Sudah punya akun? <a onclick="switchToLogin()">Login di sini</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="ASSET/IMAGE/logo_universitas.png" alt="Logo Polibang" width="50">
+        <p>&copy;2024 (2023010008) Ahmad Sukron</p>
+    </footer>
+
+    <script src="ASSET/JS/script.js"></script>
+</body>
+</html>
